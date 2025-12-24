@@ -7,7 +7,7 @@
     <persistence-unit name="meuPU">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>modelo.basico.Usuario</class>
-
+        <class>modelo.basico.Produto</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres"/>
