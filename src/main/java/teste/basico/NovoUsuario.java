@@ -10,7 +10,7 @@ public class NovoUsuario {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("meuPU");
         EntityManager em = emf.createEntityManager();
 
-        Usuario novoUsuario = new Usuario("Djalma", "djalma@gmail.com");
+        Usuario novoUsuario = new Usuario("Blue", "blue@gmail.com");
 
         em.getTransaction().begin();
         em.persist(novoUsuario);
