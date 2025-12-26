@@ -47,15 +47,13 @@ public class DAO <E> {
         return this.abrirT().incluir(entidade).fecharT();
     }
 
-    public List<E> obterTodos(int limite, int deslocamento ){
+    public List<E> obterTodos( ){
         if(classe==null){
             throw new UnsupportedOperationException("Classe nula");
         }
 
         String jpql = "select e from " + classe.getSimpleName() + " e";
         TypedQuery<E> query = em.createQuery(jpql, classe);
-        query.setMaxResults(limite);
-        query.setFirstResult(deslocamento);
         return query.getResultList();
     }
 
