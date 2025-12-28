@@ -57,6 +57,10 @@ public class DAO <E> {
         return query.getResultList();
     }
 
+    public E obterPorId(Object id){
+        return em.find(classe, id);
+    }
+
     public void fechar(){
         em.close();
     }
