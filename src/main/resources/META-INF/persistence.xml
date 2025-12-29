@@ -10,6 +10,9 @@
         <class>modelo.basico.Produto</class>
         <class>modelo.umpraum.Assento</class>
         <class>modelo.umpraum.Cliente</class>
+        <class>teste.basico.UmPraMuitos.ItemPedido</class>
+        <class>teste.basico.UmPraMuitos.Pedido</class>
+
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres"/>
